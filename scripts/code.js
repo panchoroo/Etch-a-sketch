@@ -1,5 +1,5 @@
 const container = document.querySelector('.container');
-const changeSize = document.querySelector('#changeSize');
+const changeSize = document.querySelector('#sizeRange');
 const reset = document.querySelector('#reset');
 let size = 16;
 function CreateGrid(){
@@ -23,7 +23,7 @@ function erase() {
     CreateGrid();
 }
 function sizeCh() {
-    size = parseInt(prompt("Enter the size of the Grid:"));
+    size = document.getElementById("sizeRange").value;
     erase();
     document.documentElement.style.setProperty('--size', size);
 }
