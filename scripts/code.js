@@ -13,10 +13,6 @@ function CreateGrid(){
     }
 }
 function erase() {
-    /*const gridItems = document.querySelectorAll('.container > div');
-    gridItems.forEach((div) => {
-    div.style.backgroundColor = '#fff';
-  });*/
     while (container.firstChild) {
         container.removeChild(container.firstChild);
     }
